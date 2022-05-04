@@ -36,7 +36,7 @@
                             <div class="mcb-wrap-inner">
                                 <div class="column mcb-column five-sixth column_column">
                                     <div class="column_attr clearfix">
-                                        <h1>26</h1>
+                                        <h1>test</h1>
                                         <hr class="no_line" style="margin:0 auto 20px" />
 
                                         <h4 class="themecolor">Different products</h4>
@@ -65,6 +65,7 @@
                                     <div class="column_attr clearfix align_center">
                                         <h2>Our team</h2>
                                     </div>
+                                    <?php print_r($data[0]) ?>
                                 </div>
                             </div>
                         </div>

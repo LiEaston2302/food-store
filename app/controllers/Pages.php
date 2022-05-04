@@ -1,7 +1,13 @@
 <?php
 class Pages extends Controller
 {
-    private $farmModel;
+    private $db;
+
+    public function __construct()
+    {
+        $this->PageModel = $this->model("Page");
+    }
+
 
     public function index()
     {
@@ -13,8 +19,10 @@ class Pages extends Controller
 
     public function about()
     {
+        $showEmployees = $this->PageModel->showEmployees();
         $data = [
-            "title" => "About"
+            "title" => "About",
+            "employees" => $showEmployees
         ];
         $this->view("pages/about", $data);
     }

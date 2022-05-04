@@ -23,7 +23,7 @@ define("CURRENTYEAR", "2022");
 if ($local) {
     define("DB_HOST", "localhost");
     define("DB_USER", "root");
-    define("DB_PORT", "3308");
+    define("DB_PORT", "3307");
     define("DB_PASS", "");
     define("DB_NAME", "farm");
 } else {
