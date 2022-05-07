@@ -20,10 +20,18 @@ class Pages extends Controller
     public function about()
     {
         $showEmployees = $this->PageModel->showEmployees();
+        $employeeCount = $this->PageModel->employeeCount();
+        $productCount = $this->PageModel->productCount();
+        $empfname = $this->PageModel->getEmployeeFirstName();
+
         $data = [
             "title" => "About",
-            "employees" => $showEmployees
+            "employees" => $showEmployees,
+            "employee-count" => $employeeCount,
+            "employee-first-name" => $empfname,
+            "product-count" => $productCount
         ];
+
         $this->view("pages/about", $data);
     }
 
