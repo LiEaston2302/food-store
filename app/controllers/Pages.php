@@ -8,11 +8,12 @@ class Pages extends Controller
         $this->PageModel = $this->model("Page");
     }
 
-
     public function index()
     {
+        $showProducts = $this->PageModel->showProducts();
         $data = [
-            "title" => "Home"
+            "title" => "Home",
+            "products" => $showProducts
         ];
         $this->view("pages/index", $data);
     }
@@ -37,16 +38,20 @@ class Pages extends Controller
 
     public function products()
     {
+        $showProducts = $this->PageModel->showProducts();
         $data = [
-            "title" => "Products"
+            "title" => "Products",
+            "products" => $showProducts
         ];
         $this->view("pages/products", $data);
     }
 
     public function product()
     {
+        $showProducts = $this->PageModel->showProducts();
         $data = [
-            "title" => "Product"
+            "title" => "Product",
+            "products" => $showProducts
         ];
         $this->view("pages/product", $data);
     }

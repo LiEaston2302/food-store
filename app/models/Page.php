@@ -77,4 +77,18 @@ class Page
         //return the query to the controller
         return $this->db->resultSet();
     }
+
+    // PRODUCTS MODEL
+
+    public function showProducts()
+    {
+        //create the query
+        $this->db->query("
+        SELECT * 
+        FROM products
+        ORDER BY prod_id;
+        ");
+        //return the query to the controller
+        return $this->db->resultSet();
+    }
 }
