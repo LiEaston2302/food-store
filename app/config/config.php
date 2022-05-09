@@ -27,9 +27,9 @@ if ($local) {
     define("DB_PASS", "");
     define("DB_NAME", "farm");
 } else {
-    define("DB_HOST", "");
-    define("DB_USER", "");
-    define("DB_PORT", "");
-    define("DB_PASS", "");
-    define("DB_NAME", "");
+    define("DB_HOST", "localhost");
+    define("DB_USER", "unatomtgr1ji0");
+    define("DB_PORT", "3307");
+    define("DB_PASS", "lbz6lakseg8g");
+    define("DB_NAME", "dbgas7gnm7uvrq");
 }
